@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChartJS - Line</title>
+        <style>
+            .chart-container {
+                width:  80%;
+                height: 480px;
+                margin: 0 auto;
+            }
+            .pie-chart-container {
+                width : 360px;
+                height : 360px;
+                float : left;
+            }
+        </style>
+             <!-- javascript -->
+             <script src="js/jquery.min.js"></script>
+             <script src="js/Chart.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var ctx = $("#line-chartcanvas"), serverdata = $.getJSON("chartdata");
+                serverdata.done(function(responce) {
+                    var chart = new Chart( ctx, {type : "line",data : responce,options : {title : {display : true,position : "top",text : "Guild Count Over Time",ontSize : 18, fontColor : "#111"},legend : {display : true,position : "bottom"}}});
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="chart-container">
+            <canvas id="line-chartcanvas"></canvas>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "discord_bot_growth_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index": "index.js"
+  },
+  "author": "numselli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}

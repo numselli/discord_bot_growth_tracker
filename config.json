@@ -1,0 +1,8 @@
+{
+	"checkInterval": "0 0 * * *",
+	"websitePort" : 6969,
+	"discordAuthorization": "YOUR_USER_TOKEN",
+	"botIDs": [
+		
+	]
+}
