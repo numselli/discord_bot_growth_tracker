@@ -16,6 +16,7 @@ app.get('/chartdata', async (req, res) => {
 // collect data
 (async () => {
 	let intrawdata = fs.readFileSync('dataset.json'), intdata = JSON.parse(intrawdata);
+	intdata.labels.push((new Date()).toLocaleTimeString("en-us", {year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit"})); 
 	if (intdata.datasets.length === 0) {
 		intdata.datasets =  await Promise.all(
 			config.botIDs.map(async(id)=>{
