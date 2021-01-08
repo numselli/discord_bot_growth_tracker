@@ -1,4 +1,5 @@
-# An easy way to visualy veiw the growth of your discord bot.
+
+# An easy way to visually view the growth of your discord bot.
 
 ## How to setup
 1. Download [Node.js](https://nodejs.org/en/download/)
@@ -6,9 +7,9 @@
 3. Open cmd or terminal type `cd ` then drag the folder for this repo into the cmd/terminal window and hit enter.
 4. type `npm i` and hit enter
 5. edit the `config.json` file
-    1. checkInterva this is how often the chart will get new information. it is written in the cron format, you can use [this site](https://crontab.guru/) to genarate this<br>defualt: every 24 hours
-    2. websitePort this is part of the url used to veiw the chart. this can be any four diget number from `0001` to `9999`. <br> defualt: 6969
-    3. discordAuthorization put your discord user token here, its not used for anything but authenticating with discord. I recomend using an alt accout's token for this, since this might be agenst discord's tos.
+    1. checkInterva this is how often the chart will get new information. it is written in the cron format, you can use [this site](https://crontab.guru/) to generate this<br>default: every 24 hours
+    2. websitePort this is part of the URL used to view the chart. this can be any four-digit number from `0001` to `9999`. <br> default: 6969
+    3. discordAuthorization put your discord user token here, its not used for anything but authenticating with discord. I recommend using an alt account’s token for this, since this might be agent discord's terms of service.
     4. botIDs this is where you put the id's of the bots that you want to track
 6. type `pm2 start index.js --name bot-growth-tracker` and hit enter
 7. go to `127.0.0.1:`port-number in your web browser
