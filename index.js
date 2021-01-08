@@ -2,7 +2,7 @@
 const fs = require('fs'), express = require('express'), app = express(), config = require('./config.json'), cron = require('node-cron'), fetch = require('node-fetch');
 app.use(express.json(), express.static('site'));
 app.listen(config.websitePort, () => {
-	console.log(`[${(new Date()).toLocaleTimeString("en-us", {year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit"})}] site live on 127.0.0.1:${websitePort}`);
+	console.log(`[${(new Date()).toLocaleTimeString("en-us", {year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit"})}] site live on 127.0.0.1:${config.websitePort}`);
 });
 app.get('/', async (req, res) => {
 	res.sendFile('./site/index.html', { root: __dirname });
