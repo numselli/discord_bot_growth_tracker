@@ -1,6 +1,8 @@
 
 # An easy way to visually view the growth of your discord bot.
 
+## If you are looking at setting this up your own bot I recommend using [statcord](https://statcord.com/) over this program
+
 ## How to setup
 1. Download [Node.js](https://nodejs.org/en/download/)
 2. Download this repo
